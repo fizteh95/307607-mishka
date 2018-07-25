@@ -12,9 +12,9 @@ body {
   font-weight: 700;
   color: #000000;
 
-  background-image: url("../img/mishka-index-mobile.jpg");
-  background-repeat: no-repeat;
-  background-position: 50% 0;
+  // background-image: url("../img/mishka-index-mobile.jpg");
+  // background-repeat: no-repeat;
+  // background-position: 50% 0;
 
   opacity: 0.5;
 }
@@ -70,6 +70,119 @@ body {
 	//margin-right: -10px;
 	right: 30px;
 	top: 32px;
+}
+
+
+@media (min-width: 768px) {
+
+	body {
+		width: 768px;
+		margin: 0 auto;
+		padding: 0;
+	}
+
+	.main_header {
+		height: 87px;
+		border-bottom: solid #ececec 1px;
+		//outline: solid red 2px;
+		position: relative;
+	}
+
+	.main-nav__toggle {
+		display: none;
+	}
+
+	.main-nav__wrapper {
+		display: block;
+		position: relative;
+		padding: 0;
+		margin: 0;
+		//display: flex;
+		width: 398px;
+		height: 88px;
+		margin-left: auto; 
+		background-image: url("../img/cart.png");
+  	background-repeat: no-repeat;
+  	background-position: 115px 35px;
+	}
+
+	.page-header__logo {
+		// img {
+		// 	display: none;
+		// }
+		display: block;
+		width: 113px;
+		height: 46px;
+		position: absolute;
+		margin: 0; 
+		left: 48px;
+		top: 22px;
+		background-image: url("../img/mishka-logo-tablet.png");
+	}
+
+	.page-header__logo-image {
+		display: none;
+	}
+
+	.site-list {
+		padding: 0;
+		margin: 0;
+		display: flex;
+		list-style: none;
+		position: absolute;
+		top: 107px;
+		z-index: 1;
+		left: -321px;
+		li a {
+			font-size: 15px;
+	  	line-height: 24px;
+	  	color: black;
+	  	text-decoration: none;
+  	}
+	}
+
+	.site-list__item {
+		margin-right: 36px;
+	}
+
+	.user-list {
+		list-style: none;
+		position: absolute;
+		top: 32px;
+		right: 50px;
+		z-index: 1;
+	}
+
+	.user-list__login {
+		font-size: 17px;
+  	line-height: 24px;
+  	color: black;
+  	text-decoration: none;
+	}
+
+	.user-list, .user-list__item, .user-list__login	{
+		padding: 0;
+		margin: 0;
+	}
+
+	.search-list__form {
+		display: none;
+	}
+
+	.main-nav {
+		display: flex;
+	}
+
+	.search-list__button {
+		width: 83px;
+		height: 88px;
+		border: solid #ececec 1px;
+		border-top: none;
+		background-color: white;
+		background-image: url("../img/search.png");
+		background-repeat: no-repeat;
+		background-position: center;
+	}
 }
 
 
@@ -137,6 +250,85 @@ body {
 	background-image: url("../img/toy.png");
 	background-repeat: no-repeat;
 	background-position: calc(100% - 12px) 21px;
+}
+
+
+@media (min-width: 768px) {
+	.page-main__top-wrap {
+		display: block;
+		.top-wrap__list {
+			display: none;
+			//margin-top: 0px;
+		}
+	}
+
+	.top-wrap__text {
+		display: block;
+		font-size: 15px;
+  	line-height: 24px;
+  	color: #464646;
+  	font-weight: normal;
+  	margin-left: auto;
+  	width: 231px;
+  	margin-top: 0px;
+  	padding-top: 18px;
+	}
+
+	.page-main__head {
+		height: 738px;
+		margin-top: 0px;
+		background-image: url("../img/hero-desktop.jpg");
+		background-repeat: no-repeat;
+		background-position: center 0px;
+		padding: 0 50px;
+	}
+
+	.page-main__head__text {
+		font-size: 43px;
+	  line-height: 50px;
+		padding-top: 97px;
+		width: 500px;
+		text-align: center;
+	}
+
+
+	.bahroma_div {
+		display: flex;
+	}
+
+	.page-main__bahroma {
+		height: 103px;
+		width: 334px;
+		margin-top: 373px;
+		height: 117px;
+		font-size: 20px;
+	  line-height: 30px;
+	  padding-top: 27px;
+	  padding-left: 35px;
+	}
+
+
+	.page-main__bahroma--left {
+		background-position: 257px 30px;
+	}
+
+	.page-main__bahroma--right {
+		background-position: 240px 30px;
+	}
+
+	.visulka {
+		width: 768px;
+		height: 24px;
+		background-image: url("../img/zigzag-fill-desktop.png");
+		background-repeat: repeat-x;
+		//outline: solid red 1px;
+		position: relative;
+		top: -10px;
+		margin-left: -50px;
+
+	}
+	//
+
 }
 
 
@@ -251,6 +443,106 @@ body {
 
 
 
+@media (min-width: 768px) {
+	.page-main__week-good {
+		flex-wrap: wrap;
+		flex-direction: row;
+		padding-right: 50px;
+		padding-left: 50px;
+	}
+
+	.week-good__header {
+		padding-top: 25px;
+		font-size: 43px;
+	  line-height: 50px;
+	  left: -3px;
+	}
+
+	.week-good__label {
+		font-size: 17px;
+	  line-height: 17px;
+	  position: relative;
+	  top: 16px;
+	  left: 138px;
+	  width: 80px;
+	  text-align: center;
+	}
+
+	.week-good__div {
+		width: 50%;
+		padding-top: 0px;
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-start;
+	}
+
+	.week-good__left__promo {
+		margin-top: 50px;
+		padding-top: 0;
+		font-size: 17px;
+  	line-height: 30px;
+  	width: 290px;
+  	margin-bottom: 33px;
+	}
+
+	.week-good__stat {
+		width: 291px;
+		min-width: 260px;
+	}
+
+	.stat__field {
+		width: 33%;
+		min-width: 90px;
+	}
+
+	.week-good__cost--top, .week-good__order--top {
+		display: block;
+	}
+
+
+	.week-good__cost--top {
+		font-size: 20px;
+  	line-height: 24px;
+  	color: #464646;
+  	position: relative;
+  	top: 37px;
+  	left: 71px;
+	}
+
+	.week-good__order--top {
+		width: 289px;
+		margin-top: 55px;
+	}
+
+	.week-good__cost--bottom, .week-good__order--bottom {
+		display: none;
+	}
+
+	.week-good__right {
+		img {
+			display: none;
+		}
+		margin-top: 60px;
+		min-width: 333px;
+		min-height: 404px;
+		background-image: url("../img/triple-set-tablet.jpg");
+		background-repeat: no-repeat;
+	}
+
+	.page-main__week-good {
+		padding-bottom: 65px;
+		background-image: url("../img/zigzag-line-desktop2.png");
+		background-repeat: repeat-x;
+		background-position: 0px 100%;
+	}
+
+}
+
+
+
+
+
+
 
 // о нас 
 
@@ -329,8 +621,67 @@ body {
 }
 
 
+@media (min-width: 768px) {
+
+	.page-main__about {
+		padding: 0 50px;
+		padding-bottom: 95px;
+		background-image: url("../img/zigzag-line-desktop2.png");
+		background-repeat: repeat-x;
+		background-position: 0px 100%;
+	}
+
+
+	.about-us__header {
+		font-size: 43px;
+	  line-height: 50px;	
+	  margin-top: 50px;
+	  margin-left: -4px;
+	  margin-bottom: 40px;
+	}
+
+	.about-us__item {
+		width: 50%;
+		height: 137px;
+		font-size: 20px;
+	  line-height: 22px;
+	}
+
+	.about-us__list {
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+	.about-us__list li:nth-child(1) {
+		order: 1;
+	}
+
+	.about-us__list li:nth-child(2) {
+		order: 3;
+	}
+
+	.about-us__list li:nth-child(3) {
+		order: 5;
+	}
+
+	.about-us__list li:nth-child(4) {
+		order: 2;
+	}
+
+	.about-us__list li:nth-child(5) {
+		order: 4;
+	}
+
+	.about-us__list li:nth-child(6) {
+		order: 6;
+	}
+}
+
+
+
 
 // комментарии
+
 
 
 
@@ -426,6 +777,72 @@ body {
 }
 
 
+@media (min-width: 768px) {
+
+	.about__comments {
+		position: relative;
+	}
+
+	.comments__header {
+		font-size: 43px;
+  	line-height: 50px;
+  	margin-top: 113px;
+  	margin-left: -4px;
+	}
+
+	.comments__text {
+		font-size: 17px;
+  	line-height: 30px;
+  	color: #464646;
+  	margin-top: 36px;
+	}
+
+	.comments__author {
+		font-size: 18px;
+  	line-height: 37px;
+  	margin-top: 40px;
+	}
+
+	.comments__mail {
+		font-size: 17px;
+  	line-height: 30px;
+  	color: #464646;
+  	margin-top: -5px;
+	}
+
+	.comments__button {
+		width: 175px;
+		position: absolute;
+		right: 0px;
+		bottom: 35px;
+	}
+
+	.comments__back, .comments__forward {
+		min-width: 10px;
+		width: 50%;
+		border: none;
+	}
+
+	.comments__write {
+		position: absolute;
+		top: 2px;
+		right: 0;
+		width: 175px;
+	}
+
+	.review_img {
+		background-image: url("../img/review.jpg");
+		background-repeat: no-repeat;
+		width: 350px;
+		height: 457px;
+		position: absolute;
+		top: -77px;
+		left: -50px;
+		z-index: -1;
+	}
+}
+
+
 
 
 //контакты  
@@ -505,6 +922,12 @@ body {
   margin: 0 auto;
   background-color: white;	
 }
+
+
+@media (min-width: 768px) {
+	
+}
+
 
 
 
