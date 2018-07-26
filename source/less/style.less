@@ -21,9 +21,9 @@ body {
 
 @media (min-width: 768px) {
 	body {
-		background-image: url("../img/mishka-index-tablet.jpg");
-	  background-repeat: no-repeat;
-	  background-position: 50% 0;	
+		// background-image: url("../img/mishka-index-tablet.jpg");
+	 //  background-repeat: no-repeat;
+	 //  background-position: 50% 0;	
 	}
 }
 
@@ -925,7 +925,60 @@ body {
 
 
 @media (min-width: 768px) {
+
+	.page-main__contacts__left {
+		padding: 0 50px;
+		padding-top: 60px;
+		background-image: url("../img/flag.png");
+		background-repeat: no-repeat;
+		background-position: 92.7% 46px;
+	}
+
+	.contacts__header {
+		font-size: 43px;
+	  line-height: 50px;
+	  margin-left: -4px;
+	  margin-top: 0px;
+	}
+
+	.contacts__contacts {
+		font-size: 17px;
+	  line-height: 30px;
+	  color: #464646;
+	  margin-left: 0px;
+		margin-right: auto;
+	  margin-top: 49px;
+	  tbody {
+	  	display: flex;
+	  }
+	  tr {
+	  	width: 50%;
+	  }
+	}
+
+	.contacts__value {
+		width: 259px;
+	}
+
+	.contacts__field {
+		width: auto;
+		width: 76px;
+	}
+
+	.page-main__contacts__right {
+		margin: 0 auto;
+		margin-top: 55px;
+		width: 768px;
+		height: 457px;
+		background-image: url("../img/map_tablet.jpg");
+	}
 	
+	.contacts__write {
+		width: 230px;
+		height: 52px;
+	  margin:15px auto;
+	}	
+
 }
 
 
@@ -971,12 +1024,6 @@ body {
 	justify-content: space-between;
 }
 
-.social__item {
-	// width: 30px;
-	// height: 30px;
-	//background-color: yellow;
-}
-
 .social__link {
 	width: 35px;
 	height: 35px;
@@ -984,6 +1031,7 @@ body {
 	border: none;
 	margin: 0;
 	padding: 0;
+	background-color: rgba(255, 255, 255, 0);
 }
 
 .social__link--vkontakte {
@@ -1031,4 +1079,49 @@ body {
 	background-image: url("../img/htmlacademy.png");
 	background-repeat: no-repeat;
 	background-position: 2px 2px;
+	background-color: rgba(255, 255, 255, 0);
+}
+
+
+@media (min-width: 768px) {
+	.page-footer__wrapper {
+		height: 150px;
+		flex-direction: row;
+		justify-content: space-between;
+		padding: 0 50px;
+		align-items: center;
+		background-color: #f0f0f0;
+	}
+
+	.page-footer__logo {
+		background-image: url("../img/logo-footer.png");
+		width: 102px;
+		height: 34px;
+		position: relative;
+		top: -5px;
+	}
+
+	.page-footer__line {
+		display: none;
+	}
+
+	.copyright__text {
+		position: relative;	
+		margin: 0;
+		top: 8px;
+		left: 0;
+	}
+
+	.copyright__link {
+		position: relative;
+		left: 24px;
+		top: 24px;
+		margin-left: auto;
+		margin-right: 0px;
+	}
+
+	.page-footer__copyright {
+		width: 183px;
+		margin-left: -80px;
+	}
 }
